@@ -21,7 +21,7 @@ public class User implements Serializable{
 	private Long Id;
 	
 	private String userId;
-	private String firsName;
+	private String firstName;
 	private String lastName;
 	private String username;
 	private String password;
@@ -50,10 +50,10 @@ public class User implements Serializable{
 		this.userId = userId;
 	}
 	public String getFirsName() {
-		return firsName;
+		return firstName;
 	}
-	public void setFirsName(String firsName) {
-		this.firsName = firsName;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 	public String getLastName() {
 		return lastName;
@@ -132,13 +132,13 @@ public class User implements Serializable{
 	}
 	
 	
-	public User(Long id, String userId, String firsName, String lastName, String username, String password,
+	public User(Long id, String userId, String firstName, String lastName, String username, String password,
 			String email, String profileImageUrl, Date lastLoginDate, Date getLastLoginDateDisplay, Date joinDate,
 			String role, String[] authorities, boolean isActive, boolean isNotLocked) {
 		super();
 		Id = id;
 		this.userId = userId;
-		this.firsName = firsName;
+		this.firstName = firstName;
 		this.lastName = lastName;
 		this.username = username;
 		this.password = password;

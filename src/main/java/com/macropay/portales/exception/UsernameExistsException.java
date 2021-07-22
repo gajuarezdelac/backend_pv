@@ -4,7 +4,7 @@ public class UsernameExistsException extends Exception{
 	
 	private static final long serialVersionUID = 1L;
 
-	UsernameExistsException(String msg) {
+	public UsernameExistsException(String msg) {
 		super(msg);
 	}
 }

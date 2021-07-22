@@ -165,11 +165,10 @@ public class UserServiceImpl implements IUserService, UserDetailsService{
         return passwordEncoder.encode(password);
     }
 
-    
+
     private String generatePassword() {
         return RandomStringUtils.randomAlphanumeric(10);
     }
-    
 
     private String getTemporaryProfileImageUrl(String username) {
         return ServletUriComponentsBuilder.fromCurrentContextPath().path(DEFAULT_USER_IMAGE_PATH).toUriString();
